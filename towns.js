@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('#btnDelete').click(deleteTown);
     $('#btnAdd').click(addTown);
     $('#btnShuffle').click(shuffleTowns);
-    $('#btnAdd').click(addTown);
+    
 });
 
 function deleteTown() {
@@ -28,12 +28,7 @@ function addTown() {
     $('#result').text(townName + " added.");
 }
 
-function addTown() { 
-    let townName = $('#townNameForAdd').val(); 
-    $('#townNameForAdd').val(''); 
-    $('#towns').append($('<option>').text(townName)); 
-    $('#result').text(townName + " added.");
- }
+
 
 
 function showMessage(msg) {
